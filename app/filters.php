@@ -75,6 +75,6 @@ add_filter('embed_oembed_html', function($html, $url, $attr) {
     return '<div class="embed-responsive embed-responsive-16by9">' . $html . '</div>';
 }, 10, 3);
 
-// add_filter( 'algolia_templates_path', function() {
-//     return 'views/';
-// } );
+add_filter( 'algolia_templates_path', function() {
+    return 'views/';
+} );
